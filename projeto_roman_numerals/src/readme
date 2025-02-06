@@ -1,0 +1,52 @@
+# Conversão de Números Inteiros para Algarismos Romanos (TDD)
+
+Este repositório contém a implementação de uma função para converter números inteiros em seus equivalentes em algarismos romanos, seguindo a abordagem **Desenvolvimento Orientado a Testes (TDD)**. O projeto inclui testes unitários para garantir a correta conversão dos números.
+
+## 📌 Tecnologias Utilizadas
+- **Python 3**
+- **Unittest** (módulo padrão para testes unitários em Python)
+
+## 📂 Estrutura do Projeto
+```
+📁 projeto_roman_numerals
+│── 📄 main.py           # Implementação da conversão
+│── 📄 test_roman.py     # Testes unitários com logs detalhados
+│── 📄 README.md         # Documentação do projeto
+```
+
+## 🚀 Como Executar
+### 1️⃣ Clonar o Repositório
+```sh
+ git clone https://github.com/EmanuelHSC/Numeros-Romanos.git
+ cd projeto_roman_numerals
+```
+
+### 2️⃣ Executar os Testes
+```sh
+python -m unittest test_roman.py
+```
+Isso executará os testes e exibirá logs detalhados sobre os resultados obtidos.
+
+## 📜 Funcionamento da Conversão
+A conversão é baseada em um conjunto de tuplas contendo os valores decimais e seus respectivos símbolos romanos. A função percorre esse conjunto, subtraindo os valores correspondentes e concatenando os símbolos romanos ao resultado final.
+
+### Exemplo de Uso:
+```python
+from main import int_to_roman
+
+print(int_to_roman(1987))  # Saída: MCMLXXXVII
+print(int_to_roman(2024))  # Saída: MMXXIV
+```
+
+## ✅ Testes Unitários
+O projeto contém testes para diferentes cenários, incluindo:
+- Números pequenos (1-10)
+- Números médios (40, 90, 400, 900, etc.)
+- Números grandes (1987, 2024, 3999)
+- Casos de borda
+
+Os testes imprimem logs detalhados para facilitar a depuração, indicando valores esperados e obtidos.
+
+## 📜 Licença
+Este projeto está sob a licença MIT. Sinta-se livre para contribuir e melhorar a implementação! 🚀
+
